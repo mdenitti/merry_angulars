@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+h1.intro {
+    font-family: 'Passions Conflict', cursive;
+    font-size: 9rem;
+    text-align: center;
+    color:white;
+    margin-top:10px;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+}
+
+body {
+    background-color: #f5f5f5;
+    /* background image with fixed position */
+    background: url(https://img.freepik.com/premium-vector/christmas-background-various-snowflakes-holiday-symbols-red-colors_444390-5256.jpg?w=2000) no-repeat center center fixed;
+}
+
+a.navlink {
+    background-color: white;
+    padding: 20px;
+    text-decoration: none;
+    color: red;
+    font-weight: 200;
+    font-size: 27px;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+a.navlink:hover {
+    background-color: rgb(63, 178, 18);
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.todo {
+    background-color: #ffffff73;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input.addtodo {
+    border-color: #f72529;
+    border-width: thick;
+    font-size: 28px;
+    font-weight: 200;
+    background-color: #f72529;
+    color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgb(255, 135, 135)!important;
+  }

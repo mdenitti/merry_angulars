@@ -1,0 +1,24 @@
+
+
+<!-- iterate todos in bootstrap list-group -->
+<ul class="list-group">
+
+    <!-- if todos is emtpy, show this message -->
+    <li class="list-group-item" *ngIf="todos.length == 0">
+        <div class="row">
+            <div class="col-12">
+                <span class="text-center">No todos done yet</span>
+            </div>
+        </div>
+        
+    <li class="list-group-item" *ngFor="let todo of todos">
+       
+        <div class="row">
+            <div class="col-10">
+                <span class="">{{todo.title}}</span>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-warning me-2" (click)="undo(todo.id)">OPEN TODO</button>
+            </div>
+        </div>
+    </li>

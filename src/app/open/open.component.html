@@ -1,0 +1,18 @@
+<div class="form">
+    <input type="text" class="form-control mb-4 addtodo" placeholder="Add a new todo and press enter" [(ngModel)]="todo" (keyup.enter)="addTodo()">
+</div>
+
+<!-- iterate todos in bootstrap list-group -->
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let todo of todos">
+       
+        <div class="row">
+            <div class="col-10">
+                <span class="">{{todo.title}}</span>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-danger me-2" (click)="remove(todo.id)">x</button>
+                <button class="btn btn-success" (click)="done(todo.id)">Done</button>
+            </div>
+        </div>
+    </li>
